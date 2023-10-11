@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy your application files into the container
 COPY package.json package-lock.json /app/
-COPY app.js /app/
+COPY hello-world.js /app/
 
 # Install application dependencies
 RUN npm install
@@ -15,4 +15,4 @@ RUN npm install
 EXPOSE 3000
 
 # Start the Node.js application
-CMD ["node", "app.js"]
+CMD ["node", "hello-world.js"]
