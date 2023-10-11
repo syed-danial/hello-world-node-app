@@ -5,7 +5,6 @@ FROM node:14
 WORKDIR /app
 
 # Copy your application files into the container
-COPY package.json package-lock.json /app/
 COPY hello-world.js /app/
 
 # Install application dependencies
